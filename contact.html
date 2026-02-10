@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrocat - Professional Electronics Solutions</title>
+    <title>Contact - Electrocat</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,6 @@
             color: #333;
         }
 
-        /* Header with logo */
         .header {
             background: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -34,6 +33,7 @@
             font-size: 2rem;
             font-weight: bold;
             color: #2c3e50;
+            text-decoration: none;
         }
 
         .logo-icon {
@@ -47,7 +47,6 @@
             height: 100%;
         }
 
-        /* Navigation bar */
         .navbar {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
@@ -85,34 +84,47 @@
             border-bottom: 3px solid white;
         }
 
-        /* Main content area */
         .content {
             max-width: 1200px;
             margin: 3rem auto;
-            padding: 2rem;
+            padding: 3rem;
             background: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             border-radius: 8px;
         }
 
-        .hero {
-            text-align: center;
-            padding: 3rem 0;
-        }
-
-        .hero h1 {
+        h1 {
             font-size: 2.5rem;
             color: #2c3e50;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
         }
 
-        .hero p {
+        .contact-info {
+            text-align: center;
             font-size: 1.2rem;
-            color: #666;
-            line-height: 1.6;
+            line-height: 2;
         }
 
-        /* Footer */
+        .email-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1.5rem 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .email-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
         .footer {
             background: #2c3e50;
             color: white;
@@ -121,7 +133,6 @@
             margin-top: 3rem;
         }
 
-        /* Responsive design */
         @media (max-width: 768px) {
             .nav-button {
                 padding: 1rem 0.5rem;
@@ -136,24 +147,16 @@
                 width: 60px;
                 height: 60px;
             }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Header with logo -->
     <div class="header">
-        <div class="logo">
+        <a href="index.html" class="logo">
             <div class="logo-icon">
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Lightning bolt background -->
                     <path d="M60 10 L45 50 L55 50 L40 90 L65 45 L55 45 Z" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
-                    <!-- Cat silhouette -->
                     <path d="M30 35 Q25 25 20 30 Q15 35 20 40 L25 45 Q30 50 35 55 Q40 60 45 60 Q50 60 55 60 Q60 60 65 55 Q70 50 75 45 L80 40 Q85 35 80 30 Q75 25 70 35 L65 40 Q60 35 55 35 Q50 30 45 35 Q40 35 35 40 Z M45 50 Q43 50 43 52 Q43 54 45 54 Q47 54 47 52 Q47 50 45 50 M55 50 Q53 50 53 52 Q53 54 55 54 Q57 54 57 52 Q57 50 55 50" fill="#2c3e50" stroke="#000" stroke-width="1.5"/>
-                    <!-- Whiskers -->
                     <line x1="25" y1="52" x2="15" y2="50" stroke="#000" stroke-width="1"/>
                     <line x1="25" y1="54" x2="15" y2="56" stroke="#000" stroke-width="1"/>
                     <line x1="75" y1="52" x2="85" y2="50" stroke="#000" stroke-width="1"/>
@@ -161,32 +164,37 @@
                 </svg>
             </div>
             <span>ELECTROCAT</span>
-        </div>
+        </a>
     </div>
 
-    <!-- Navigation bar -->
     <nav class="navbar">
-        <a href="index.html" class="nav-button active">HOME</a>
+        <a href="index.html" class="nav-button">HOME</a>
         <a href="products.html" class="nav-button">PRODUCTS</a>
         <a href="support.html" class="nav-button">SUPPORT</a>
-        <a href="contact.html" class="nav-button">CONTACT</a>
+        <a href="contact.html" class="nav-button active">CONTACT</a>
         <a href="about.html" class="nav-button">ABOUT US</a>
     </nav>
 
-    <!-- Main content -->
     <div class="content">
-        <div class="hero">
-            <h1>Welcome to Electrocat</h1>
-            <p>Professional ESP32-based electronics solutions for your projects.<br>
-            Innovative designs. Quality products. Expert support.</p>
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p>Have questions about our products?</p>
+            <p>Need technical support or custom solutions?</p>
+            <p>We'd love to hear from you!</p>
+
+            <a href="mailto:contact@electrocat.tech" class="email-button">
+                Send Us an Email
+            </a>
+
+            <p style="margin-top: 2rem; color: #666;">
+                <strong>Email:</strong> contact@electrocat.tech
+            </p>
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2026 Electrocat. All rights reserved.</p>
-        <p>Email: <a href="mailto:contact@electrocat.tech" style="color: #667eea;">contact@electrocat.tech</a> |
-        GitHub: <a href="https://github.com/Electrocat-Max" style="color: #667eea;">Electrocat-Max</a></p>
+        <p>Asheville, NC</p>
     </div>
 </body>
 </html>
