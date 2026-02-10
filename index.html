@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrocat - Electronics & Code</title>
+    <title>Electrocat - Professional Electronics Solutions</title>
     <style>
         * {
             margin: 0;
@@ -13,86 +13,163 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header with logo */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
         }
 
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 600px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            opacity: 0.8;
-        }
-
-        .links {
+        .logo {
             display: flex;
+            align-items: center;
             gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
         }
 
-        .btn {
-            padding: 0.8rem 1.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid white;
+        .logo-icon {
+            font-size: 3rem;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background: #2c3e50;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-button {
+            flex: 1;
+            max-width: 200px;
+            padding: 1rem 2rem;
+            background: #2c3e50;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
             font-size: 1rem;
+            border: none;
+            border-right: 1px solid #34495e;
             transition: all 0.3s;
-            backdrop-filter: blur(10px);
+            cursor: pointer;
         }
 
-        .btn:hover {
-            background: rgba(255, 255, 255, 0.3);
+        .nav-button:last-child {
+            border-right: none;
+        }
+
+        .nav-button:hover {
+            background: #34495e;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
-        @media (max-width: 600px) {
-            h1 {
+        .nav-button.active {
+            background: #667eea;
+        }
+
+        /* Main content area */
+        .content {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-wrap: wrap;
+            }
+
+            .nav-button {
+                flex: 1 1 50%;
+                max-width: none;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .logo-icon {
                 font-size: 2rem;
             }
-            .subtitle {
-                font-size: 1.2rem;
+
+            .hero h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>⚡ Electrocat</h1>
-        <div class="subtitle">Electronics & Code Projects</div>
-        <div class="description">
-            Welcome! This site is home to electronics projects, embedded systems, and creative engineering.
-            More content coming soon!
+    <!-- Header with logo -->
+    <div class="header">
+        <div class="logo">
+            <span class="logo-icon">🐱⚡</span>
+            <span>Electrocat</span>
         </div>
-        <div class="links">
-            <a href="https://github.com/Electrocat-Max" class="btn">GitHub</a>
-            <a href="mailto:contact@electrocat.tech" class="btn">Contact</a>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-button active">HOME</a>
+        <a href="products.html" class="nav-button">PRODUCTS</a>
+        <a href="support.html" class="nav-button">SUPPORT</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
+        <a href="about.html" class="nav-button">ABOUT US</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="hero">
+            <h1>Welcome to Electrocat</h1>
+            <p>Professional ESP32-based electronics solutions for your projects.<br>
+            Innovative designs. Quality products. Expert support.</p>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 Electrocat. All rights reserved.</p>
+        <p>Email: <a href="mailto:contact@electrocat.tech" style="color: #667eea;">contact@electrocat.tech</a> |
+        GitHub: <a href="https://github.com/Electrocat-Max" style="color: #667eea;">Electrocat-Max</a></p>
     </div>
 </body>
 </html>
